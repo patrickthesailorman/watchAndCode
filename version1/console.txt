@@ -1,0 +1,53 @@
+19:00:00.000 var todos = ['item 1', 'item 2', 'item 3']
+19:00:00.000 undefined
+19:00:00.000 todos
+19:00:00.000 (3) ["item 1", "item 2", "item 3"]
+19:00:00.000 todos[0]
+19:00:00.000 "item 1"
+19:00:00.000 todos[2]
+19:00:00.000 "item 3"
+19:00:00.000 console.log("hello there")
+21:39:44.908 VM203:1 hello there
+21:39:44.908 undefined
+21:39:44.908 console.log("hello there", "Patrick")
+21:40:11.963 VM205:1 hello there Patrick
+21:40:11.963 undefined
+21:40:11.963 var todos = ['item 1', 'item 2', 'item 3']
+21:40:11.963 undefined
+21:40:11.963 console.log(todos)
+21:41:21.012 VM218:1 (3) ["item 1", "item 2", "item 3"]
+21:41:21.012 undefined
+21:41:21.012 todos.push("item 4")
+21:41:21.012 4
+21:41:21.012 todos
+21:41:21.012 (4) ["item 1", "item 2", "item 3", "item 4"]
+21:41:21.012 todos.push('item 5')
+21:41:21.012 5
+21:41:21.012 todos
+21:41:21.012 (5) ["item 1", "item 2", "item 3", "item 4", "item 5"]
+21:41:21.012 todo[0]
+21:41:21.012 VM323:1 Uncaught ReferenceError: todo is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM323:1
+21:41:21.012 todos[0]
+21:41:21.012 "item 1"
+21:41:21.012 todos[1]
+21:41:21.012 "item 2"
+21:41:21.012 todos[3]
+21:41:21.012 "item 4"
+21:41:21.012 todos[5]
+21:41:21.012 undefined
+21:41:21.012 todos[0]='item 1 updated'
+21:41:21.012 "item 1 updated"
+21:41:21.012 todos
+21:41:21.012 (5) ["item 1 updated", "item 2", "item 3", "item 4", "item 5"]
+21:41:21.012 todos.splice(0,1)
+21:41:21.012 ["item 1 updated"]
+21:41:21.012 todos
+21:41:21.012 (4) ["item 2", "item 3", "item 4", "item 5"]
+21:41:21.012 todos.splice(3,1)
+21:41:21.012 ["item 5"]
+21:41:21.012 todos
+21:41:21.012 (3) ["item 2", "item 3", "item 4"]
+21:41:21.012 todos.splice(3,1)
+21:41:21.012 []
