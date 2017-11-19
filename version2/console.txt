@@ -1,0 +1,91 @@
+function sayHiTo(person) {
+ console.log('Hi,', person);
+}
+19:00:00.000 undefined
+19:00:00.000 sayHiTo('Michelle')
+11:40:47.764 VM338:2 Hi, Michelle
+11:40:47.764 undefined
+11:40:47.764 sayHiTo()
+11:40:58.141 VM338:2 Hi, undefined
+11:40:58.141 undefined
+11:40:58.141 sayHiTo('Patrick')
+11:41:08.220 VM338:2 Hi, Patrick
+11:41:08.220 undefined
+11:41:08.220 var todos = ['item 1', 'item 2', 'item 3']
+11:41:08.220 undefined
+11:41:08.220 function displayTodos() {
+	console.log('My Todos:', todos);
+} 
+// It should have a function to display Todos.
+11:41:08.220 undefined
+11:41:08.220 displayTodos()
+11:47:00.485 VM438:2 My Todos: (3) ["item 1", "item 2", "item 3"]
+11:47:00.485 undefined
+11:47:00.485 function addTodo() {
+ todos.push('new todo');
+}
+// It should have a function to add Todos.
+11:47:00.485 undefined
+11:47:00.485 addTodo('item 4')
+11:47:00.485 undefined
+11:47:00.485 todos
+11:47:00.485 (4) ["item 1", "item 2", "item 3", "new todo"]
+11:47:00.485 addTodo()
+11:47:00.485 undefined
+11:47:00.485 diplayTodos()
+11:47:00.485 VM575:1 Uncaught ReferenceError: diplayTodos is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM575:1
+11:47:00.485 displayTodos()
+11:51:10.738 VM438:2 My Todos: (5) ["item 1", "item 2", "item 3", "new todo", "new todo"]
+11:51:10.738 undefined
+11:51:10.738 function addTodo() {
+ todos.push('new todo');
+  displayTodos();
+}
+11:51:10.738 undefined
+11:51:10.738 addTodo()
+11:52:38.256 VM438:2 My Todos: (6) ["item 1", "item 2", "item 3", "new todo", "new todo", "new todo"]
+11:52:38.256 undefined
+11:52:38.256 function addTodo(todo) {
+ todos.push(todo);
+  displayTodos();
+} // It should have a function to add Todos.
+11:52:38.256 undefined
+11:52:38.256 addTodo('Hello There')
+11:54:23.058 VM438:2 My Todos: (7) ["item 1", "item 2", "item 3", "new todo", "new todo", "new todo", "Hello There"]
+11:54:23.058 undefined
+11:54:23.058 function changeTodo(position, newValue) {
+ todos[position] = newValue;
+} // It should have a function to change Todos.
+11:54:23.058 undefined
+11:54:23.058 changeTodo([0], "changed")
+11:54:23.058 undefined
+11:54:23.058 displayTodos()
+12:03:24.072 VM438:2 My Todos: (7) ["changed", "item 2", "item 3", "new todo", "new todo", "new todo", "Hello There"]
+12:03:24.072 undefined
+12:03:24.072 function changeTodo(position, newValue) {
+ todos[position] = newValue;
+  displayTodos();
+}  // It should have a function to change Todos.
+12:03:24.072 undefined
+12:03:24.072 changeTodo([0], "changed again")
+12:04:19.682 VM438:2 My Todos: (7) ["changed again", "item 2", "item 3", "new todo", "new todo", "new todo", "Hello There"]
+12:04:19.682 undefined
+12:04:19.682 function deleteTodo(position) {
+ todos.splice(position, 1);
+  displayTodos();
+} // It should have a function to delete Todos.
+12:04:19.682 undefined
+12:04:19.682 deleteTodo([0])
+12:08:28.721 VM438:2 My Todos: (6) ["item 2", "item 3", "new todo", "new todo", "new todo", "Hello There"]
+12:08:28.721 undefined
+12:08:28.721 deleteTodo(0)
+12:08:47.312 VM438:2 My Todos: (5) ["item 3", "new todo", "new todo", "new todo", "Hello There"]
+12:08:47.312 undefined
+12:08:47.312 deleteTodo(2)
+12:09:11.599 VM438:2 My Todos: (4) ["item 3", "new todo", "new todo", "Hello There"]
+12:09:11.599 undefined
+12:09:11.599 deleteTodo(2)
+12:09:18.694 VM438:2 My Todos: (3) ["item 3", "new todo", "Hello There"]
+12:09:18.694 undefined
