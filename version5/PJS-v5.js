@@ -32,11 +32,3 @@ var todoList = {
      this.displayTodos();
    }
 };
-
-for(var i = 0; i < 3; i++) {
-console.log("hey");
-}
-
-for(var i = 0; i < 3; i++) {
-console.log("i");
-}
