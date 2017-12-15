@@ -6,8 +6,8 @@ var todoList = {
       completed: false
     });
   },  
-  changeTodo: function(position, newValue) {
-    this.todos[position] = newValue;
+  changeTodo: function(position, todoText) {
+    this.todos[position].todoText = todoText;
   },
    deleteTodo: function(position) {
      this.todos.splice(position, 1);
